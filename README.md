@@ -1,6 +1,6 @@
 # RSS Gen
 
-Docker-first FastAPI app for generating and discovering RSS feeds for:
+FastAPI app for generating and discovering RSS feeds for:
 - YouTube channels
 - Reddit subreddits
 - Websites via Feedsearch
@@ -15,23 +15,6 @@ Lightweight frontend included. No Node build step.
 - JSON API + XML feed responses
 - Simple HTML/CSS/JS UI served by FastAPI
 
-## Project layout
-
-```text
-app.py
-requirements.txt
-fastapi_backend/
-├── main.py
-├── services.py
-├── models.py
-├── cache.py
-├── feedsearch_api_docs.md
-└── frontend/
-    ├── index.html
-    └── assets/
-        ├── app.js
-        └── styles.css
-```
 
 ## Quick start
 
@@ -146,7 +129,6 @@ RSS_GEN_CORS_ORIGINS="*"
 docker compose up --build
 ```
 
-The container listens on port `3460`; Compose maps it to host port `3464`.
 
 ## Notes
 
@@ -156,7 +138,6 @@ The container listens on port `3460`; Compose maps it to host port `3464`.
 
 ## Credits
 
-- Discovery strategy notes: [`discovery_feed_strategy.md`](./discovery_feed_strategy.md)
 - Feedsearch API docs: [`fastapi_backend/feedsearch_api_docs.md`](./fastapi_backend/feedsearch_api_docs.md)
 
 ## License
