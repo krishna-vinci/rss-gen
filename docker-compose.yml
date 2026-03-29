@@ -2,7 +2,7 @@ services:
   rss-gen:
     build: .
     ports:
-      - "3464:3460"
+      - "3464:3464"
     volumes:
       - cache-data:/app/.cache
     environment:

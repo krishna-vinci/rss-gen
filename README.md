@@ -7,6 +7,14 @@ FastAPI app for generating and discovering RSS feeds for:
 
 Lightweight frontend included. No Node build step.
 
+## Frontend preview
+
+<p align="center">
+	<a href="./frontend-preview.png">
+		<img src="./frontend-preview.png" alt="RSS Gen frontend preview" width="600">
+	</a>
+</p>
+
 ## Features
 
 - YouTube channel resolution with feed variants: `all`, `videos`, `shorts`, `live`

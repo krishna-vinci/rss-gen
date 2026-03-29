@@ -14,6 +14,6 @@ RUN mkdir -p /app/.cache && chown -R rssgen:rssgen /app
 
 USER rssgen
 
-EXPOSE 3460
+EXPOSE 3464
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3460"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3464"]
