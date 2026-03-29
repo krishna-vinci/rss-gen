@@ -1,0 +1,17 @@
+services:
+  rss-gen:
+    build: .
+    ports:
+      - "3464:3460"
+    volumes:
+      - cache-data:/app/.cache
+    environment:
+      - RSS_GEN_CACHE_DIR=/app/.cache
+      # - RSS_GEN_CORS_ORIGINS=*
+      # - RSS_GEN_REQUEST_TIMEOUT_SECONDS=15
+      # - RSS_GEN_CHANNEL_CACHE_TTL_SECONDS=1800
+      # - RSS_GEN_FEEDSEARCH_CACHE_TTL_SECONDS=900
+    restart: unless-stopped
+
+volumes:
+  cache-data:
